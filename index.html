@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- ==========================================================================
+       SEO & Meta Information
+       ========================================================================== -->
+  <title>Harish K. M | MCA &amp; AI Developer Portfolio</title>
+  <meta name="description"
+    content="Portfolio of Harish K. M, B.Sc. Artificial Intelligence graduate currently pursuing MCA (Master of Computer Applications) at Annai College of Arts and Science on Bharathidasan University. Explore AI/ML projects and resume.">
+  <meta name="keywords"
+    content="Harish K. M, Harish Kumar, MCA Student, Master of Computer Applications, Artificial Intelligence, Machine Learning, Python Developer, Annai College of Arts and Science, Bharathidasan University, SwordNex Technologies, Deep Learning">
+  <meta name="author" content="Harish K. M">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Social Sharing -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Harish K. M | MCA &amp; AI Developer Portfolio">
+  <meta property="og:description"
+    content="B.Sc. Artificial Intelligence graduate currently pursuing MCA at Annai College of Arts and Science on Bharathidasan University. AI/ML, Python, and Software Development.">
+  <meta property="og:image" content="assets/images/avatar.jpg">
+
+  <!-- Favicon Icon (Modern SVG Vector) -->
+  <link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230284c7'/><text x='50%' y='65%' font-size='55' font-weight='800' fill='%23ffffff' font-family='sans-serif' text-anchor='middle'>H</text></svg>">
+
+  <!-- Google Fonts: Plus Jakarta Sans (Body) & Outfit (Headings) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome 6 Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animations.css">
+
+  <!-- Structured Data (JSON-LD) for Search Engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Harish K. M",
+    "jobTitle": "AI & Python Developer | MCA",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "Annai College of Arts and Science, Bharathidasan University"
+    },
+    "description": "B.Sc. Artificial Intelligence graduate currently pursuing Master of Computer Applications (MCA) at Annai College of Arts and Science on Bharathidasan University.",
+    "knowsAbout": ["Artificial Intelligence", "Machine Learning", "Python", "Deep Learning", "MCA", "Flask", "FastAPI", "MySQL"]
+  }
+  </script>
+</head>
+
+<body>
+
+  <!-- Ambient Grid Background Pattern -->
+  <div class="bg-grid-pattern" aria-hidden="true"></div>
+
+  <!-- ==========================================================================
+       HEADER & NAVIGATION BAR
+       ========================================================================== -->
+  <header class="site-header" id="siteHeader">
+    <div class="container nav-container">
+
+      <!-- Brand Logo -->
+      <a href="#hero" class="site-logo" aria-label="Harish K. M Home">
+        <span class="logo-symbol">H</span>
+        <span class="logo-text">Harish<span></span></span>
+      </a>
+
+      <!-- Desktop Navigation Menu -->
+      <nav class="desktop-nav" aria-label="Main Navigation">
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Certifications</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- Desktop Action CTA -->
+      <div class="header-actions">
+        <!-- Theme Mode Switcher -->
+        <button type="button" class="theme-toggle-btn" id="themeToggleBtn" aria-label="Toggle light / dark theme"
+          title="Toggle Light / Dark Mode">
+          <i class="fas fa-sun theme-icon-light"></i>
+          <i class="fas fa-moon theme-icon-dark"></i>
+        </button>
+        <button type="button" class="btn btn-secondary btn-sm open-resume-modal"
+          title="View Harish K. M's official resume">
+          <i class="fas fa-file-alt"></i> View Resume
+        </button>
+        <a href="#contact" class="btn btn-outline btn-sm">
+          <i class="fas fa-paper-plane"></i> Let's Connect
+        </a>
+      </div>
+
+      <!-- Mobile Hamburger Button -->
+      <button class="mobile-toggle" id="mobileNavToggle" aria-label="Toggle navigation menu" aria-expanded="false"
+        aria-controls="mobileDrawer">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Backdrop & Drawer -->
+  <div class="mobile-drawer-backdrop" id="drawerBackdrop" aria-hidden="true"></div>
+  <aside class="mobile-drawer" id="mobileDrawer" aria-label="Mobile Navigation Menu">
+    <div class="mobile-drawer-header"
+      style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 24px;">
+      <div class="site-logo">
+        <span class="logo-symbol">H</span>
+        <span class="logo-text">Harish<span>.ai</span></span>
+      </div>
+      <!-- Mobile Theme Toggle -->
+      <button type="button" class="theme-toggle-btn" id="mobileThemeToggleBtn" aria-label="Toggle light / dark theme"
+        title="Toggle Light / Dark Mode">
+        <i class="fas fa-sun theme-icon-light"></i>
+        <i class="fas fa-moon theme-icon-dark"></i>
+      </button>
+    </div>
+
+    <ul class="mobile-nav-links">
+      <li><a href="#hero" class="mobile-nav-link"><i class="fas fa-home"></i> Home</a></li>
+      <li><a href="#about" class="mobile-nav-link"><i class="fas fa-user"></i> About Me</a></li>
+      <li><a href="#education" class="mobile-nav-link"><i class="fas fa-graduation-cap"></i> Education</a></li>
+      <li><a href="#skills" class="mobile-nav-link"><i class="fas fa-code"></i> Skills</a></li>
+      <li><a href="#projects" class="mobile-nav-link"><i class="fas fa-layer-group"></i> Projects</a></li>
+      <li><a href="#experience" class="mobile-nav-link"><i class="fas fa-briefcase"></i> Experience</a></li>
+      <li><a href="#certifications" class="mobile-nav-link"><i class="fas fa-certificate"></i> Certifications</a></li>
+      <li><a href="#resume" class="mobile-nav-link"><i class="fas fa-file-alt"></i> Resume</a></li>
+      <li><a href="#contact" class="mobile-nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+    </ul>
+
+    <div class="mobile-drawer-footer" style="display: flex; flex-direction: column; gap: 10px;">
+      <button type="button" class="btn btn-primary open-resume-modal" style="width: 100%;">
+        <i class="fas fa-eye"></i> View Resume
+      </button>
+      <a href="assets/Harish_Kumar_Resume.pdf" download="Harish_KM_Resume.pdf" class="btn btn-outline"
+        style="width: 100%;">
+        <i class="fas fa-download"></i> Download Resume (.PDF)
+      </a>
+    </div>
+  </aside>
+
+  <!-- ==========================================================================
+       1. HERO SECTION
+       ========================================================================== -->
+  <section class="hero-section" id="hero">
+    <div class="container hero-grid">
+
+      <!-- Hero Text Content -->
+      <div class="hero-content reveal-left">
+
+        <!-- Live Status Pill -->
+        <div class="hero-status-wrap">
+          <div class="status-pill">
+            <span class="status-dot"></span>
+            <span>Pursuing MCA &bull; B.Sc. AI Graduate &bull; Available for Roles</span>
+          </div>
+        </div>
+
+        <!-- Main Title & Greeting -->
+        <h1 class="hero-greeting">
+          Hi, I'm <span class="name-highlight">Harish K. M</span>
+        </h1>
+
+        <!-- Dynamic Role Subtitle -->
+        <div class="hero-role-title">
+          <span class="tag-code">&lt;role&gt;</span>
+          <span id="typewriterText">MCA &amp;</span>
+          <span class="tag-code">&lt;/role&gt;</span>
+        </div>
+
+        <!-- Short Introduction -->
+        <p class="hero-intro">
+          Graduated with <strong>B.Sc. in Artificial Intelligence</strong> and currently pursuing <strong>MCA &ndash;
+            Master of Computer Applications</strong> at <strong>AI Developer</strong><strong>Annai College of Arts and
+            Science</strong>, affiliated
+          with <strong>Bharathidasan University</strong>. Passionate about machine learning algorithms, deep learning
+          neural networks, Python engineering, and architecting practical software solutions.
+        </p>
+
+        <!-- CTA Buttons: Projects, View Resume, Download Resume -->
+        <div class="hero-cta-group">
+          <a href="#projects" class="btn btn-primary">
+            <i class="fas fa-laptop-code"></i> View My Projects
+          </a>
+          <button type="button" class="btn btn-secondary open-resume-modal" data-tab="interactive"
+            title="View interactive digital resume">
+            <i class="fas fa-eye"></i> View Resume
+          </button>
+          <a href="assets/Harish_Kumar_Resume.pdf" download="Harish_KM_Resume.pdf" class="btn btn-outline"
+            title="Direct download single-page PDF">
+            <i class="fas fa-file-download"></i> Download CV
+          </a>
+        </div>
+
+        <!-- Quick Profile Highlights -->
+        <div class="hero-quick-stats">
+          <div class="stat-item">
+            <span class="stat-value">MCA <span></span></span>
+            <span class="stat-label">Pursuing &bull; Bharathidasan University</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">B.Sc. <span>AI &amp; ML</span></span>
+            <span class="stat-label">Completed (2023&ndash;2026)</span>
+          </div>
+          <div class="stat-item">
+            <span class="stat-value">SwordNex <span>Intern</span></span>
+            <span class="stat-label">Industry Experience</span>
+          </div>
+        </div>
+
+      </div>
+
+
+      <!-- Hero Profile Visual / Avatar Area -->
+      <div class="hero-visual reveal-right">
+        <div class="avatar-wrapper">
+          <div class="avatar-inner">
+            <img src="assets/images/avatar.jpg" alt="Harish Kumar - AI & Python Developer" class="avatar-img">
+          </div>
+
+          <!-- Floating Interactive Tech Badges -->
+          <div class="floating-badge badge-top">
+            <i class="fab fa-python"></i>
+            <span>Python &amp; ML</span>
+          </div>
+
+          <div class="floating-badge badge-bottom">
+            <i class="fas fa-brain"></i>
+            <span>Deep Learning / CNN</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       2. ABOUT ME SECTION
+       ========================================================================== -->
+  <section class="section section-alt" id="about">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-badge"><i class="fas fa-user-astronaut"></i> Background</span>
+        <h2 class="section-title">About <span class="text-gradient">Me</span></h2>
+        <p class="section-desc">
+          Building a strong foundation in Artificial Intelligence, programming fundamentals, and modern web application
+          development.
+        </p>
+      </div>
+
+      <div class="about-grid">
+
+        <!-- About Narrative -->
+        <div class="about-text reveal-left">
+          <p>
+            I have successfully completed my undergraduate college degree, graduating with my <strong>B.Sc. in
+              Artificial Intelligence &amp; Machine Learning</strong> from <strong>Annai College of Arts and
+              Science</strong>, affiliated with <strong>Bharathidasan University</strong>. My undergraduate journey gave
+            me a deep foundation in intelligent systems, algorithmic logic, and modern software development.
+          </p>
+          <p>
+            Advancing my academic pathway and technical mastery, I am currently pursuing my <strong>MCA - Master of
+              Computer Applications</strong> at <strong>Annai College of Arts and Science</strong> on
+            <strong>Bharathidasan University</strong>. This postgraduate curriculum expands my focus into scalable
+            enterprise applications, cloud architectures, advanced database engineering, and production-ready
+            intelligent workflows.
+          </p>
+          <p>
+            My core strength lies in <strong>Python programming, Machine Learning, and Deep Learning</strong>,
+            architecting robust data pipelines, predictive models, and intelligent automated tools. Complementing AI, I
+            emphasize strict software engineering principles&mdash;using <strong>C programming</strong> for foundational
+            computational efficiency and designing normalized, high-performance database architectures with
+            <strong>MySQL / SQL</strong>.
+          </p>
+          <p>
+            To deploy machine learning capabilities into responsive interfaces, I design high-throughput backend
+            services using <strong>Flask and FastAPI</strong>. My continuous objective is creating <strong>impactful
+              real-world software</strong> that solves practical challenges and delivers reliable value.
+          </p>
+          <div style="margin-top: 24px;">
+            <a href="#contact" class="btn btn-primary btn-sm">
+              <i class="fas fa-handshake"></i> Let's Discuss Opportunities
+            </a>
+          </div>
+        </div>
+
+        <!-- Key Pillars Grid -->
+        <div class="about-highlights-grid reveal-right">
+
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3 class="highlight-title">AI &amp; Machine Learning</h3>
+            <p class="highlight-desc">
+              Focus on supervised learning, deep neural networks, and computer vision with CNNs and TensorFlow.
+            </p>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon purple">
+              <i class="fab fa-python"></i>
+            </div>
+            <h3 class="highlight-title">Python Development</h3>
+            <p class="highlight-desc">
+              Writing clean, modular code with Python, leveraging data science libraries and automation scripts.
+            </p>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon purple">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="highlight-title">MySQL &amp; Databases</h3>
+            <p class="highlight-desc">
+              Designing relational database schemas, writing optimized SQL queries, and managing data integrity.
+            </p>
+          </div>
+
+          <div class="highlight-card">
+            <div class="highlight-icon">
+              <i class="fas fa-server"></i>
+            </div>
+            <h3 class="highlight-title">Backend &amp; Web Services</h3>
+            <p class="highlight-desc">
+              Connecting machine learning inference with responsive web interfaces through Flask and FastAPI REST APIs.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       3. EDUCATION SECTION
+       ========================================================================== -->
+  <section class="section" id="education">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-badge"><i class="fas fa-graduation-cap"></i> Academic Pathway</span>
+        <h2 class="section-title">My <span class="text-gradient">Education</span></h2>
+        <p class="section-desc">
+          Structured academic learning focused on Artificial Intelligence, computational logic, and software systems.
+        </p>
+      </div>
+
+      <div class="education-wrapper reveal-scale">
+
+        <!-- Post-Graduation: MCA (Currently Pursuing) -->
+        <div class="education-card active-card" style="margin-bottom: 28px;">
+
+          <div class="edu-header">
+            <div class="edu-main-info">
+              <div class="edu-icon-wrap mca-icon">
+                <i class="fas fa-graduation-cap"></i>
+              </div>
+              <div>
+                <div class="edu-status-pill"><span class="status-pulse"></span> Currently Pursuing</div>
+                <h3 class="edu-degree">MCA &ndash; Master of Computer Applications</h3>
+                <div class="edu-college">
+                  <i class="fas fa-university"></i> Annai College of Arts and Science, Kumbakonam
+                </div>
+              </div>
+            </div>
+
+            <div class="edu-badge-row">
+              <div class="edu-meta-pill" title="Affiliated University">
+                <i class="fas fa-certificate"></i>
+                <span>Bharathidasan University</span>
+              </div>
+              <div class="edu-meta-pill" title="Academic Status">
+                <i class="fas fa-calendar-alt"></i>
+                <span>2026 &ndash; Present (Pursuing)</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="edu-summary-text">
+            Advanced postgraduate program expanding foundational computer science into scalable software architecture,
+            enterprise system design, database management, cloud technologies, and production-grade artificial
+            intelligence applications.
+          </p>
+
+          <div class="edu-divider"></div>
+
+          <h4 class="edu-modules-title"><i class="fas fa-book-open"></i> Key Curriculum &amp; Postgraduate Focus:</h4>
+          <div class="edu-tags-list">
+            <span class="edu-tag">Advanced Computer Applications</span>
+            <span class="edu-tag">Advanced Data Structures &amp; Algorithms</span>
+            <span class="edu-tag">Object-Oriented Software Engineering</span>
+            <span class="edu-tag">Relational Database Systems &amp; SQL</span>
+            <span class="edu-tag">Applied Machine Learning &amp; AI</span>
+            <span class="edu-tag">Enterprise Web Application Architecture</span>
+            <span class="edu-tag">Python &amp; RESTful API Frameworks</span>
+            <span class="edu-tag">Cloud Infrastructure &amp; Security</span>
+          </div>
+
+        </div>
+
+        <!-- Undergraduation: B.Sc. AI & ML (Completed) -->
+        <div class="education-card" style="margin-bottom: 24px;">
+
+          <div class="edu-header">
+            <div class="edu-main-info">
+              <div class="edu-icon-wrap">
+                <i class="fas fa-award"></i>
+              </div>
+              <div>
+                <div class="edu-status-pill completed-pill"><i class="fas fa-check-circle"></i> Completed / Graduated
+                </div>
+                <h3 class="edu-degree">B.Sc. Artificial Intelligence &amp; Machine Learning</h3>
+                <div class="edu-college">
+                  <i class="fas fa-school"></i> Annai College of Arts and Science, Kumbakonam
+                </div>
+              </div>
+            </div>
+
+            <div class="edu-badge-row">
+              <div class="edu-meta-pill" title="Affiliated University">
+                <i class="fas fa-certificate"></i>
+                <span>Bharathidasan University</span>
+              </div>
+              <div class="edu-meta-pill" title="Academic Period">
+                <i class="fas fa-calendar-alt"></i>
+                <span>2023 &ndash; 2026 (Completed)</span>
+              </div>
+            </div>
+          </div>
+
+          <p class="edu-summary-text">
+            Rigorous undergraduate degree focused on core theoretical and mathematical foundations of Artificial
+            Intelligence, statistical machine learning models, convolutional neural networks, and Python application
+            programming.
+          </p>
+
+          <div class="edu-divider"></div>
+
+          <h4 class="edu-modules-title"><i class="fas fa-book-open"></i> Key Curriculum &amp; Foundational Modules:</h4>
+          <div class="edu-tags-list">
+            <span class="edu-tag">Artificial Intelligence Concepts</span>
+            <span class="edu-tag">Machine Learning (KNN, SVM, Logistic Regression, Naive Bayes)</span>
+            <span class="edu-tag">Deep Learning (TensorFlow, PyTorch)</span>
+            <span class="edu-tag">Python Programming</span>
+            <span class="edu-tag">Data Visualization (Matplotlib, Seaborn)</span>
+            <span class="edu-tag">Data Structures &amp; Algorithms</span>
+            <span class="edu-tag">C / C++ Programming</span>
+            <span class="edu-tag">Web Technologies (HTML, CSS, JavaScript)</span>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       4. TECHNICAL SKILLS SECTION (No Fake Percentages)
+       ========================================================================== -->
+  <section class="section section-alt" id="skills">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-badge"><i class="fas fa-terminal"></i> Technical Stack</span>
+        <h2 class="section-title">Skills &amp; <span class="text-gradient">Proficiencies</span></h2>
+        <p class="section-desc">
+          Categorized technical competencies acquired through coursework, hands-on development, and project
+          implementation.
+        </p>
+      </div>
+
+      <div class="skills-grid">
+
+        <!-- Category 1: Languages -->
+        <div class="skill-category-card reveal delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <i class="fas fa-code"></i>
+            </div>
+            <h3 class="skill-cat-title">Languages</h3>
+          </div>
+          <div class="skill-tags-cloud">
+            <span class="skill-pill"><i class="fab fa-python"></i> Python</span>
+            <span class="skill-pill"><i class="fab fa-html5"></i> HTML</span>
+            <span class="skill-pill"><i class="fab fa-css3-alt"></i> CSS</span>
+            <span class="skill-pill"><i class="fab fa-js"></i> JavaScript</span>
+            <span class="skill-pill"><i class="fas fa-microchip"></i> C</span>
+            <span class="skill-pill"><i class="fas fa-code"></i> C++</span>
+          </div>
+        </div>
+
+        <!-- Category 2: AI & ML -->
+        <div class="skill-category-card reveal delay-2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon purple">
+              <i class="fas fa-brain"></i>
+            </div>
+            <h3 class="skill-cat-title">AI &amp; Machine Learning</h3>
+          </div>
+          <div class="skill-tags-cloud">
+            <span class="skill-pill"><i class="fas fa-robot"></i> Machine Learning</span>
+            <span class="skill-pill"><i class="fas fa-project-diagram"></i> KNN</span>
+            <span class="skill-pill"><i class="fas fa-project-diagram"></i> SVM</span>
+            <span class="skill-pill"><i class="fas fa-chart-line"></i> Logistic Regression</span>
+            <span class="skill-pill"><i class="fas fa-calculator"></i> Naive Bayes</span>
+            <span class="skill-pill"><i class="fas fa-network-wired"></i> Deep Learning</span>
+            <span class="skill-pill"><i class="fas fa-layer-group"></i> TensorFlow</span>
+            <span class="skill-pill"><i class="fas fa-fire"></i> PyTorch</span>
+          </div>
+        </div>
+
+        <!-- Category 3: Data Visualization & Libraries -->
+        <div class="skill-category-card reveal delay-3">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon emerald">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3 class="skill-cat-title">Data Visualization &amp; AI Tools</h3>
+          </div>
+          <div class="skill-tags-cloud">
+            <span class="skill-pill"><i class="fas fa-chart-area"></i> Matplotlib</span>
+            <span class="skill-pill"><i class="fas fa-chart-pie"></i> Seaborn</span>
+            <span class="skill-pill"><i class="fas fa-cogs"></i> Scikit-learn</span>
+            <span class="skill-pill"><i class="fas fa-cubes"></i> Pandas</span>
+            <span class="skill-pill"><i class="fas fa-calculator"></i> NumPy</span>
+          </div>
+        </div>
+
+        <!-- Category 4: Tools & Platforms -->
+        <div class="skill-category-card reveal delay-1">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon indigo">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <h3 class="skill-cat-title">Tools &amp; Platforms</h3>
+          </div>
+          <div class="skill-tags-cloud">
+            <span class="skill-pill"><i class="fas fa-code-branch"></i> Visual Studio Code</span>
+            <span class="skill-pill"><i class="fab fa-git-alt"></i> Git &amp; GitHub</span>
+            <span class="skill-pill"><i class="fas fa-cloud"></i> Google Colab</span>
+            <span class="skill-pill"><i class="fab fa-kaggle"></i> Kaggle</span>
+            <span class="skill-pill"><i class="fas fa-file-excel"></i> Microsoft Office &amp; Excel</span>
+            <span class="skill-pill"><i class="fas fa-paint-brush"></i> Canva</span>
+          </div>
+        </div>
+
+        <!-- Category 5: Soft Skills -->
+        <div class="skill-category-card reveal delay-2">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon">
+              <i class="fas fa-users-cog"></i>
+            </div>
+            <h3 class="skill-cat-title">Soft Skills</h3>
+          </div>
+          <div class="skill-tags-cloud">
+            <span class="skill-pill"><i class="fas fa-bolt"></i> Quick Learner</span>
+            <span class="skill-pill"><i class="fas fa-lightbulb"></i> Problem Solving</span>
+            <span class="skill-pill"><i class="fas fa-comments"></i> Communication</span>
+            <span class="skill-pill"><i class="fas fa-hands-helping"></i> Teamwork</span>
+            <span class="skill-pill"><i class="fas fa-sync-alt"></i> Adaptability</span>
+          </div>
+        </div>
+
+        <!-- Category 6: Languages & Interests -->
+        <div class="skill-category-card reveal delay-3">
+          <div class="skill-cat-header">
+            <div class="skill-cat-icon purple">
+              <i class="fas fa-language"></i>
+            </div>
+            <h3 class="skill-cat-title">Languages &amp; Hobbies</h3>
+          </div>
+          <div class="skill-tags-cloud">
+            <span class="skill-pill"><i class="fas fa-globe-asia"></i> Tamil</span>
+            <span class="skill-pill"><i class="fas fa-globe-americas"></i> English</span>
+            <span class="skill-pill"><i class="fas fa-book-reader"></i> Reading Books</span>
+            <span class="skill-pill"><i class="fas fa-rocket"></i> Learning New Technologies</span>
+            <span class="skill-pill"><i class="fas fa-video"></i> Editing</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       5. PROJECTS SHOWCASE SECTION
+       ========================================================================== -->
+  <section class="section" id="projects">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-badge"><i class="fas fa-laptop-code"></i> Portfolio Showcase</span>
+        <h2 class="section-title">Featured <span class="text-gradient">Projects</span></h2>
+        <p class="section-desc">
+          Practical applications built with Python, Machine Learning frameworks, data analysis pipelines, and web
+          interfaces.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1: ATS Resume Analyzer -->
+        <article class="project-card reveal delay-1">
+          <div class="project-image-box">
+            <img src="assets/images/project-ats.jpg" alt="ATS Resume Analyzer Application Preview" class="project-img">
+            <div class="project-overlay-badge">
+              <span class="badge-code"
+                style="background: rgba(7,9,14,0.85); color: #38bdf8; border: 1px solid rgba(56,189,248,0.3); padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600;">
+                <i class="fas fa-check-circle"></i> AI Web App
+              </span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">ATS Resume Analyzer</h3>
+            <p class="project-desc">
+              An AI-based resume analysis application that evaluates resumes and helps identify relevant skills and
+              information. Built with Python and Flask.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Flask</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">PDF Processing</span>
+              <span class="tech-badge">HTML</span>
+              <span class="tech-badge">CSS</span>
+              <span class="tech-badge">JavaScript</span>
+            </div>
+
+            <div class="project-features">
+              <div class="features-heading"><i class="fas fa-star"></i> Key Features:</div>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Resume upload</li>
+                <li><i class="fas fa-check"></i> PDF processing</li>
+                <li><i class="fas fa-check"></i> Resume information extraction</li>
+                <li><i class="fas fa-check"></i> Skill analysis</li>
+                <li><i class="fas fa-check"></i> Web-based interface</li>
+              </ul>
+            </div>
+
+            <div class="project-footer-actions">
+              <!-- Placeholder link: Replace with actual GitHub repository URL -->
+              <a href="https://github.com/yourusername/ats-resume-analyzer" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm" title="View Source Code on GitHub [Placeholder]">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <button type="button" class="btn btn-primary btn-sm open-project-modal" data-project-id="ats-analyzer"
+                title="View Project Details & Demo Preview">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 2: MNIST Digit Classification using CNN -->
+        <article class="project-card reveal delay-2">
+          <div class="project-image-box">
+            <img src="assets/images/project-mnist.jpg" alt="MNIST Digit Classification using CNN Preview"
+              class="project-img">
+            <div class="project-overlay-badge">
+              <span class="badge-code"
+                style="background: rgba(7,9,14,0.85); color: #c084fc; border: 1px solid rgba(168,85,247,0.3); padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600;">
+                <i class="fas fa-brain"></i> Deep Learning
+              </span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">MNIST Digit Classification using CNN</h3>
+            <p class="project-desc">
+              A deep learning project that uses a Convolutional Neural Network to recognize handwritten digits from the
+              MNIST dataset.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">TensorFlow</span>
+              <span class="tech-badge">Keras</span>
+              <span class="tech-badge">CNN</span>
+              <span class="tech-badge">NumPy</span>
+              <span class="tech-badge">Matplotlib</span>
+            </div>
+
+            <div class="project-features">
+              <div class="features-heading"><i class="fas fa-star"></i> Key Features:</div>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i> MNIST dataset</li>
+                <li><i class="fas fa-check"></i> Image normalization</li>
+                <li><i class="fas fa-check"></i> CNN model</li>
+                <li><i class="fas fa-check"></i> Model training</li>
+                <li><i class="fas fa-check"></i> Validation</li>
+                <li><i class="fas fa-check"></i> Accuracy visualization</li>
+              </ul>
+            </div>
+
+            <div class="project-footer-actions">
+              <!-- Placeholder link: Replace with actual GitHub repository URL -->
+              <a href="https://github.com/yourusername/mnist-cnn-classification" target="_blank"
+                rel="noopener noreferrer" class="btn btn-outline btn-sm"
+                title="View Source Code on GitHub [Placeholder]">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <button type="button" class="btn btn-primary btn-sm open-project-modal" data-project-id="mnist-cnn"
+                title="View Project Details & Demo Preview">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- PROJECT 3: Citizen AI Platform from Resume -->
+        <article class="project-card reveal delay-3">
+          <div class="project-image-box">
+            <img src="assets/images/project-nlp.jpg" alt="Citizen AI Intelligent Citizen Engagement Platform"
+              class="project-img">
+            <div class="project-overlay-badge">
+              <span class="badge-code"
+                style="background: rgba(7,9,14,0.85); color: #38bdf8; border: 1px solid rgba(56,189,248,0.4); padding: 4px 10px; border-radius: 6px; font-size: 0.75rem; font-weight: 600;">
+                <i class="fas fa-brain"></i> AI &amp; Civic Platform
+              </span>
+            </div>
+          </div>
+
+          <div class="project-body">
+            <h3 class="project-title">Citizen AI &ndash; Intelligent Engagement Platform</h3>
+
+            <p class="project-desc">
+              An AI-based platform developed to improve citizen engagement and communication. Implemented core
+              intelligent features using Python and AI algorithms to apply practical machine learning to community and
+              real-life problems.
+            </p>
+
+            <div class="project-tech-stack">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Machine Learning</span>
+              <span class="tech-badge">AI Algorithms</span>
+              <span class="tech-badge">Scikit-learn</span>
+              <span class="tech-badge">NLP</span>
+              <span class="tech-badge">Flask</span>
+            </div>
+
+            <div class="project-features">
+              <div class="features-heading"><i class="fas fa-star"></i> Key Features:</div>
+              <ul class="feature-list">
+                <li><i class="fas fa-check"></i> Developed an AI-based platform to improve citizen engagement</li>
+                <li><i class="fas fa-check"></i> Implemented core features using Python and AI algorithms</li>
+                <li><i class="fas fa-check"></i> Gained practical experience in applying AI solutions to real-life
+                  problems</li>
+                <li><i class="fas fa-check"></i> Automated communication pipelines &amp; inquiry categorization</li>
+                <li><i class="fas fa-check"></i> Data visualization and user feedback workflows</li>
+              </ul>
+            </div>
+
+            <div class="project-footer-actions">
+              <a href="https://github.com/yourusername/citizen-ai-platform" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm" title="View Source Code on GitHub">
+                <i class="fab fa-github"></i> GitHub
+              </a>
+              <button type="button" class="btn btn-primary btn-sm open-project-modal" data-project-id="ai-analytics"
+                title="Preview Citizen AI Details">
+                <i class="fas fa-external-link-alt"></i> Live Demo
+              </button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       6. EXPERIENCE / INTERNSHIP SECTION
+       ========================================================================== -->
+  <section class="section section-alt" id="experience">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-badge"><i class="fas fa-briefcase"></i> Professional Journey</span>
+        <h2 class="section-title">Experience &amp; <span class="text-gradient">Readiness</span></h2>
+        <p class="section-desc">
+          Current career stage, practical project foundation, and industry readiness profile.
+        </p>
+      </div>
+
+      <div class="experience-wrapper reveal-scale">
+        <div class="fresher-card">
+
+          <div class="fresher-header">
+            <div class="fresher-headline">
+              <i class="fas fa-user-graduate"></i>
+              <span>Career Status &amp; Experience Overview</span>
+            </div>
+            <span class="status-pill">
+              <span class="status-dot"></span> Open to Internships &amp; Roles
+            </span>
+          </div>
+
+          <!-- Exact fresher text specified by user requirement -->
+          <blockquote class="fresher-statement">
+            "Fresher – Currently building practical projects and developing industry-ready skills in Artificial
+            Intelligence, Machine Learning, Python, and databases."
+          </blockquote>
+
+          <div class="fresher-pillars-grid">
+
+            <div class="pillar-item">
+              <div class="pillar-title">
+                <i class="fas fa-vial"></i> Practical Project Labs
+              </div>
+              <p class="pillar-desc">
+                Applying classroom theory into functional software solutions like the ATS Resume Analyzer and MNIST CNN
+                digit recognition system.
+              </p>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-title">
+                <i class="fas fa-sync-alt"></i> Continuous Skill Growth
+              </div>
+              <p class="pillar-desc">
+                Actively learning modern Python libraries, refining SQL data extraction skills, and studying
+                state-of-the-art AI architectures.
+              </p>
+            </div>
+
+            <div class="pillar-item">
+              <div class="pillar-title">
+                <i class="fas fa-bullseye"></i> Target Opportunities
+              </div>
+              <p class="pillar-desc">
+                Seeking AI/ML Developer Internships, Junior Python Developer positions, Data Engineering Trainee roles,
+                and entry-level software opportunities.
+              </p>
+            </div>
+
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       7. CERTIFICATIONS SECTION (Placeholders clearly marked)
+       ========================================================================== -->
+  <section class="section" id="certifications">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-badge"><i class="fas fa-certificate"></i> Verified Credentials</span>
+        <h2 class="section-title">Licenses &amp; <span class="text-gradient">Certifications</span></h2>
+        <p class="section-desc">
+          Professional credentials and technical skill milestones officially certified by IBM SkillsBuild and TNSDC.
+        </p>
+      </div>
+
+      <div class="certifications-grid">
+
+        <!-- Certificate 1: Generative AI with IBM Cloud -->
+        <div class="cert-card reveal delay-1">
+          <div class="cert-thumb-box open-cert-modal" data-cert="genai-ibm-cloud" title="Click to view certificate">
+            <img src="assets/images/cert-genai-ibm-cloud.jpg"
+              alt="Generative AI with IBM Cloud - IBM SkillsBuild Certificate" class="cert-thumb-img" />
+            <div class="cert-thumb-overlay">
+              <span class="cert-thumb-overlay-btn"><i class="fas fa-search-plus"></i> View Certificate</span>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-header">
+              <div class="cert-icon">
+                <i class="fas fa-brain"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">Generative AI with IBM Cloud</h3>
+                <div class="cert-issuer">
+                  <i class="fas fa-award"></i> IBM SkillsBuild
+                </div>
+              </div>
+            </div>
+            <div class="cert-cred-id">ID: PLAN-5D6B6E0295E7</div>
+            <div class="cert-date">
+              <i class="far fa-calendar-check"></i> Issued: 30 Jul 2025 (GMT)
+            </div>
+            <div class="cert-skills-row">
+              <span class="cert-skill-tag">Generative AI</span>
+              <span class="cert-skill-tag">IBM Cloud</span>
+              <span class="cert-skill-tag">Prompt Engineering</span>
+              <span class="cert-skill-tag">Foundation Models</span>
+            </div>
+            <div class="cert-action">
+              <button type="button" class="btn btn-primary btn-sm open-cert-modal" data-cert="genai-ibm-cloud"
+                style="flex: 1;">
+                <i class="fas fa-eye"></i> View Certificate
+              </button>
+              <a href="assets/images/cert-genai-ibm-cloud.jpg" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm" title="Open full resolution in new tab">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 2: Generative AI in Action -->
+        <div class="cert-card reveal delay-2">
+          <div class="cert-thumb-box open-cert-modal" data-cert="genai-action" title="Click to view certificate">
+            <img src="assets/images/cert-genai-action.jpg" alt="Generative AI in Action - IBM SkillsBuild Certificate"
+              class="cert-thumb-img" />
+            <div class="cert-thumb-overlay">
+              <span class="cert-thumb-overlay-btn"><i class="fas fa-search-plus"></i> View Certificate</span>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-header">
+              <div class="cert-icon">
+                <i class="fas fa-robot"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">Generative AI in Action (Earn a credential!)</h3>
+                <div class="cert-issuer">
+                  <i class="fas fa-award"></i> IBM SkillsBuild
+                </div>
+              </div>
+            </div>
+            <div class="cert-cred-id">ID: PLAN-9E14CB5C4540</div>
+            <div class="cert-date">
+              <i class="far fa-calendar-check"></i> Issued: 30 Jul 2025 (GMT)
+            </div>
+            <div class="cert-skills-row">
+              <span class="cert-skill-tag">Applied GenAI</span>
+              <span class="cert-skill-tag">AI Solutions</span>
+              <span class="cert-skill-tag">LLM Workflows</span>
+              <span class="cert-skill-tag">Model Architecture</span>
+            </div>
+            <div class="cert-action">
+              <button type="button" class="btn btn-primary btn-sm open-cert-modal" data-cert="genai-action"
+                style="flex: 1;">
+                <i class="fas fa-eye"></i> View Certificate
+              </button>
+              <a href="assets/images/cert-genai-action.jpg" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm" title="Open full resolution in new tab">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 3: TNSDC- FEWD & Cloud -->
+        <div class="cert-card reveal delay-3">
+          <div class="cert-thumb-box open-cert-modal" data-cert="fewd-cloud" title="Click to view certificate">
+            <img src="assets/images/cert-fewd-cloud.jpg" alt="TNSDC FEWD and Cloud - IBM SkillsBuild Certificate"
+              class="cert-thumb-img" />
+            <div class="cert-thumb-overlay">
+              <span class="cert-thumb-overlay-btn"><i class="fas fa-search-plus"></i> View Certificate</span>
+            </div>
+          </div>
+          <div class="cert-body">
+            <div class="cert-header">
+              <div class="cert-icon">
+                <i class="fas fa-laptop-code"></i>
+              </div>
+              <div>
+                <h3 class="cert-title">TNSDC- FEWD &amp; Cloud</h3>
+                <div class="cert-issuer">
+                  <i class="fas fa-award"></i> IBM SkillsBuild &amp; TNSDC
+                </div>
+              </div>
+            </div>
+            <div class="cert-cred-id">ID: PLAN-741582ED6C44</div>
+            <div class="cert-date">
+              <i class="far fa-calendar-check"></i> Issued: 28 Feb 2025 (GMT)
+            </div>
+            <div class="cert-skills-row">
+              <span class="cert-skill-tag">FEWD</span>
+              <span class="cert-skill-tag">Cloud Services</span>
+              <span class="cert-skill-tag">HTML5 &amp; CSS3</span>
+              <span class="cert-skill-tag">JavaScript</span>
+            </div>
+            <div class="cert-action">
+              <button type="button" class="btn btn-primary btn-sm open-cert-modal" data-cert="fewd-cloud"
+                style="flex: 1;">
+                <i class="fas fa-eye"></i> View Certificate
+              </button>
+              <a href="assets/images/cert-fewd-cloud.jpg" target="_blank" rel="noopener noreferrer"
+                class="btn btn-outline btn-sm" title="Open full resolution in new tab">
+                <i class="fas fa-external-link-alt"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       8. RESUME SECTION
+       ========================================================================== -->
+  <section class="section section-alt" id="resume">
+    <div class="container">
+
+      <div class="resume-box reveal-scale">
+        <div class="resume-icon-circle">
+          <i class="fas fa-file-pdf"></i>
+        </div>
+
+        <h2 class="resume-heading">Interested in my complete profile?</h2>
+
+        <p class="resume-text">
+          Download my official curriculum vitae for a comprehensive overview of my academic background at Annai College
+          of Arts and Science, AI/ML coursework, technical projects, and technical skills.
+        </p>
+
+        <div class="resume-actions-group">
+          <!-- Required Resume Download Link -->
+          <a href="assets/Harish_Kumar_Resume.pdf" download="Harish_Kumar_Resume.pdf" class="btn btn-primary">
+            <i class="fas fa-download"></i> Download Resume
+          </a>
+          <a href="assets/Harish_Kumar_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline">
+            <i class="fas fa-eye"></i> View PDF in Browser
+          </a>
+        </div>
+
+        <div class="resume-meta-note">
+          <span><i class="fas fa-file-alt"></i> Format: PDF Document</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-shield-alt"></i> Path: assets/Harish_Kumar_Resume.pdf</span>
+          <span>&bull;</span>
+          <span><i class="fas fa-check-circle"></i> Ready for Recruiters</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       9. CONTACT SECTION
+       ========================================================================== -->
+  <section class="section" id="contact">
+    <div class="container">
+
+      <div class="section-header reveal">
+        <span class="section-badge"><i class="fas fa-comments"></i> Get In Touch</span>
+        <h2 class="section-title">Contact <span class="text-gradient">Me</span></h2>
+        <p class="section-desc">
+          Feel free to reach out for internship opportunities, entry-level openings, technical collaboration, or project
+          feedback.
+        </p>
+      </div>
+
+      <div class="contact-grid">
+
+        <!-- Contact Information Panel -->
+        <div class="contact-info-panel reveal-left">
+
+          <div class="contact-card">
+            <h3 style="font-family: var(--font-heading); font-size: 1.3rem; margin-bottom: 20px; color: #fff;">
+              Contact Information
+            </h3>
+
+            <!-- Email Placeholder -->
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div>
+                <div class="contact-label">Email Address</div>
+                <div class="contact-value">
+                  <a href="mailto:kumarharish4222@gmail.com">kumarharish4222@gmail.com</a>
+                  <button type="button" class="copy-btn copy-trigger" data-copy-text="kumarharish4222@gmail.com"
+                    title="Copy email address">
+                    <i class="far fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- Phone Placeholder -->
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <i class="fas fa-phone-alt"></i>
+              </div>
+              <div>
+                <div class="contact-label">Phone Number</div>
+                <div class="contact-value">
+                  <a href="tel:+919345768795">+91 93457 68795</a>
+                  <button type="button" class="copy-btn copy-trigger" data-copy-text="+91 93457 68795"
+                    title="Copy phone number">
+                    <i class="far fa-copy"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <!-- LinkedIn Placeholder -->
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <i class="fab fa-linkedin-in"></i>
+              </div>
+              <div>
+                <div class="contact-label">LinkedIn Profile</div>
+                <div class="contact-value">
+                  <!-- Placeholder: Replace with your actual LinkedIn profile URL -->
+                  <a href="https://www.linkedin.com/in/harish-kumar-489768284" target="_blank"
+                    rel="noopener noreferrer">
+                    linkedin.com/in/harish-kumar-489768284
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- GitHub Placeholder -->
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <i class="fab fa-github"></i>
+              </div>
+              <div>
+                <div class="contact-label">GitHub Profile</div>
+                <div class="contact-value">
+                  <!-- Placeholder: Replace with your actual GitHub username URL -->
+                  <a href="https://github.com/Harishkumar2111" target="_blank" rel="noopener noreferrer">
+                    github.com/harish-kumar-ai
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Location Note -->
+            <div class="contact-item">
+              <div class="contact-icon-wrap">
+                <i class="fas fa-university"></i>
+              </div>
+              <div>
+                <div class="contact-label">Education / College</div>
+                <div class="contact-value" style="font-size: 0.92rem;">
+                  Annai College of Arts and Science (Bharathidasan University) &bull; MCA (Pursuing)
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form-card reveal-right">
+          <form id="contactForm" novalidate>
+
+            <div class="form-group">
+              <label for="contactName" class="form-label">Your Name <span style="color: #f87171;">*</span></label>
+              <input type="text" id="contactName" name="name" class="form-control" placeholder="e.g. Alex Johnson"
+                required autocomplete="name">
+            </div>
+
+            <div class="form-group">
+              <label for="contactEmail" class="form-label">Your Email <span style="color: #f87171;">*</span></label>
+              <input type="email" id="contactEmail" name="email" class="form-control"
+                placeholder="e.g. alex@example.com" required autocomplete="email">
+            </div>
+
+            <div class="form-group">
+              <label for="contactMessage" class="form-label">Your Message <span style="color: #f87171;">*</span></label>
+              <textarea id="contactMessage" name="message" class="form-control" rows="4"
+                placeholder="Hello Harish, I would like to speak regarding an internship / project..."
+                required></textarea>
+            </div>
+
+            <div class="form-buttons-row">
+              <button type="submit" class="btn btn-primary" id="sendMessageBtn">
+                <i class="fas fa-paper-plane"></i> Send Message
+              </button>
+
+              <button type="button" class="btn btn-outline" id="emailDirectBtn">
+                <i class="fas fa-envelope-open-text"></i> Email Me
+              </button>
+            </div>
+
+            <!-- Form Feedback Notice -->
+            <div id="formFeedback" class="form-feedback" role="alert"></div>
+
+          </form>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==========================================================================
+       10. FOOTER SECTION
+       ========================================================================== -->
+  <footer class="site-footer">
+    <div class="container">
+
+      <div class="footer-content">
+        <div class="footer-brand">
+          <div class="footer-logo">Harish Kumar</div>
+          <div class="footer-sub">MCA &bull; B.Sc. Artificial Intelligence Graduate &bull; AI &amp; Python
+            Developer</div>
+        </div>
+
+        <!-- Social Media Icons (GitHub, LinkedIn, Email) -->
+        <div class="footer-socials" aria-label="Social media profiles">
+          <!-- Placeholder Link: Replace with your actual GitHub URL -->
+          <a href="https://github.com/harish-kumar-ai" target="_blank" rel="noopener noreferrer" class="social-link"
+            aria-label="GitHub profile">
+            <i class="fab fa-github"></i>
+          </a>
+          <!-- Placeholder Link: Replace with your actual LinkedIn URL -->
+          <a href="https://linkedin.com/in/harish-kumar-ai" target="_blank" rel="noopener noreferrer"
+            class="social-link" aria-label="LinkedIn profile">
+            <i class="fab fa-linkedin-in"></i>
+          </a>
+          <a href="mailto:kumarharish4222@gmail.com" class="social-link" aria-label="Send Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Harish Kumar. All Rights Reserved.</div>
+        <div>
+          <a href="#hero" class="back-to-top-btn">
+            Back to Top <i class="fas fa-arrow-up"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ==========================================================================
+       MODAL DIALOG (Project Previews & Demos)
+       ========================================================================== -->
+  <div class="modal-overlay" id="projectModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="modalCloseBtn" aria-label="Close dialog">
+        <i class="fas fa-times"></i>
+      </button>
+      <div id="modalDynamicContent">
+        <!-- Dynamic Project Details Injected Here -->
+      </div>
+    </div>
+  </div>
+
+  <!-- JavaScript Modules -->
+  <script src="js/main.js"></script>
+</body>
+
+</html>
